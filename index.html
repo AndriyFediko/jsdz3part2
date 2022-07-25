@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsdz3+</title>
+</head>
+<body>
+    <script>
+        let friends = [`Andriy`,
+            `Sasha`,
+            `Maxim`,
+            `Sostyk`,
+            `Srtyr`,
+            `Slavik`,
+            `Volodia`,
+            `Stasic`,
+            `Anton`,
+            `Ivan`,
+        ];
+        console.log(friends);
+        console.log(friends[0]);
+        console.log(friends.at(-1));
+        if (friends[0] != `Vitalik`) {
+            friends.unshift(`VitaliK`);
+        } else {
+            friends.push(`Vitalik`);
+        }
+        friends[4] = `Alex`;
+        console.log(friends);
+        console.log(friends.length);
+        if (friends.length % 2 === 0) {
+            friends.push(`new Friend 1`, `new Friend 2`, `new Friend 3`);
+        } else {
+            friends.unshift(`new Friend 1`, `new Friend 2`)
+        }
+        console.log(friends);
+        friends.pop(-1);
+        friends.pop(-1);
+        friends.shift(-1);
+        friends.shift(-1);
+        console.log(friends);
+        friends = [];
+        console.log(friends)
+    </script>
+</body>
+</html>
